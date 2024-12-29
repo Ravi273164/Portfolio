@@ -222,7 +222,7 @@
               alt="Personal Website"
             />
             <img
-              alt="Personal Website"
+              alt="Facebook Clone"
               src="facebook.jpeg"
               height="125px"
               width="400px"
@@ -386,56 +386,19 @@
     </section>
 
 
-    <!-- <div class="chatbot-container">
-      <div class="chat-window" id="chat-window"></div>
-      <input type="text" class="chat-input" id="chat-input" placeholder="Ask a question...">
-      <button class="send-btn" onclick="sendMessage()">Send</button>
-  </div>
-  
-  <script>
-      function fetchWebsiteContent() {
-          // Fetch visible text content from the webpage
-          const bodyText = document.body.innerText;
-          return bodyText.toLowerCase().split('\n').map(line => line.trim()).filter(line => line !== "");
-      }
-  
-      function findAnswer(query) {
-          const websiteContent = fetchWebsiteContent();
-          const lowerCaseQuery = query.toLowerCase();
-  
-          for (const line of websiteContent) {
-              if (line.includes(lowerCaseQuery)) {
-                  return line;
-              }
-          }
-          return "I'm sorry, I couldn't find relevant information on this website.";
-      }
-  
-      function sendMessage() {
-          const chatInput = document.getElementById('chat-input');
-          const chatWindow = document.getElementById('chat-window');
-          const userMessage = chatInput.value;
-  
-          if (userMessage.trim() === "") return;
-  
-          // Display user message
-          const userMessageDiv = document.createElement('div');
-          userMessageDiv.className = 'user-message';
-          userMessageDiv.textContent = userMessage;
-          chatWindow.appendChild(userMessageDiv);
-  
-          // Generate bot response
-          const botResponse = findAnswer(userMessage);
-          const botMessageDiv = document.createElement('div');
-          botMessageDiv.className = 'bot-message';
-          botMessageDiv.textContent = botResponse;
-          chatWindow.appendChild(botMessageDiv);
-  
-          // Clear input and scroll to bottom
-          chatInput.value = "";
-          chatWindow.scrollTop = chatWindow.scrollHeight;
-      }
-  </script> -->
+    
+      <script>
+    window.embeddedChatbotConfig = {
+        chatbotId: "Zc0lQc6QxB3Jlo9b04p_Y",
+        domain: "www.chatbase.co"
+    }
+</script>
+<script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="Zc0lQc6QxB3Jlo9b04p_Y"
+    domain="www.chatbase.co"
+    defer>
+</script>
   
 
 
